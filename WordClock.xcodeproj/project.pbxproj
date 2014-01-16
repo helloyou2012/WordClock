@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD06BB7D187081D400E2AABA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD06BB7C187081D400E2AABA /* AVFoundation.framework */; };
 		DD08531A186B2047001DC8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD085319186B2047001DC8EB /* Foundation.framework */; };
 		DD08531C186B2047001DC8EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD08531B186B2047001DC8EB /* CoreGraphics.framework */; };
 		DD08531E186B2047001DC8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD08531D186B2047001DC8EB /* UIKit.framework */; };
@@ -14,13 +15,49 @@
 		DD085326186B2047001DC8EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD085325186B2047001DC8EB /* main.m */; };
 		DD08532A186B2047001DC8EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD085329186B2047001DC8EB /* AppDelegate.m */; };
 		DD08532D186B2047001DC8EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD08532B186B2047001DC8EB /* Main.storyboard */; };
-		DD085330186B2047001DC8EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD08532F186B2047001DC8EB /* ViewController.m */; };
 		DD085332186B2047001DC8EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD085331186B2047001DC8EB /* Images.xcassets */; };
 		DD085339186B2047001DC8EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD085338186B2047001DC8EB /* XCTest.framework */; };
 		DD08533A186B2047001DC8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD085319186B2047001DC8EB /* Foundation.framework */; };
 		DD08533B186B2047001DC8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD08531D186B2047001DC8EB /* UIKit.framework */; };
 		DD085343186B2047001DC8EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD085341186B2047001DC8EB /* InfoPlist.strings */; };
 		DD085345186B2047001DC8EB /* WordClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD085344186B2047001DC8EB /* WordClockTests.m */; };
+		DD085350186B2088001DC8EB /* word_clock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD08534E186B2088001DC8EB /* word_clock.xcdatamodeld */; };
+		DD085355186B3A45001DC8EB /* CoreDataEnvir.m in Sources */ = {isa = PBXBuildFile; fileRef = DD085354186B3A45001DC8EB /* CoreDataEnvir.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DD08535A186B3B62001DC8EB /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = DD085359186B3B62001DC8EB /* Word.m */; };
+		DD08535C186B3BE4001DC8EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD08535B186B3BE4001DC8EB /* CoreData.framework */; };
+		DD08538C186D9009001DC8EB /* GuessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD08538B186D9009001DC8EB /* GuessViewController.m */; };
+		DD085397186DB914001DC8EB /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD08538F186DB914001DC8EB /* close@2x.png */; };
+		DD08539A186DB914001DC8EB /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD085392186DB914001DC8EB /* next@2x.png */; };
+		DD08539B186DB914001DC8EB /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD085393186DB914001DC8EB /* play@2x.png */; };
+		DD08539C186DB914001DC8EB /* prev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD085394186DB914001DC8EB /* prev@2x.png */; };
+		DD08539F186DBAB9001DC8EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD08539E186DBAB9001DC8EB /* AudioToolbox.framework */; };
+		DD0853A5186DBEE6001DC8EB /* shake_match.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD0853A2186DBEE6001DC8EB /* shake_match.wav */; };
+		DD0853A6186DBEE6001DC8EB /* shake_nomatch.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD0853A3186DBEE6001DC8EB /* shake_nomatch.wav */; };
+		DD0853A7186DBEE6001DC8EB /* shake_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD0853A4186DBEE6001DC8EB /* shake_sound.wav */; };
+		DD0853A9186DE6F0001DC8EB /* SourceCodePro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD0853A8186DE6F0001DC8EB /* SourceCodePro.ttf */; };
+		DD0853AC186DEBA8001DC8EB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0853AB186DEBA8001DC8EB /* HomeViewController.m */; };
+		DD0853AF186DEC83001DC8EB /* ALDClock.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0853AE186DEC83001DC8EB /* ALDClock.m */; };
+		DD2A1A1418771EC0007867C4 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A1A1318771EC0007867C4 /* home@2x.png */; };
+		DD2A1A1818772788007867C4 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A1A1518772788007867C4 /* icon58.png */; };
+		DD2A1A1918772788007867C4 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A1A1618772788007867C4 /* icon80.png */; };
+		DD2A1A1A18772788007867C4 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A1A1718772788007867C4 /* icon120.png */; };
+		DD2A1A1C18773397007867C4 /* wordmenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2A1A1B18773397007867C4 /* wordmenu@2x.png */; };
+		DD2A1A1F1877378F007867C4 /* word_clock.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = DD2A1A1E1877378F007867C4 /* word_clock.sqlite */; };
+		DD4BB7CD1871C8FA005C0E7F /* alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4BB7CA1871C8FA005C0E7F /* alarm@2x.png */; };
+		DD4BB7CE1871C8FA005C0E7F /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4BB7CB1871C8FA005C0E7F /* list@2x.png */; };
+		DD4BB7CF1871C8FA005C0E7F /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4BB7CC1871C8FA005C0E7F /* settings@2x.png */; };
+		DD4BB7D21871D47C005C0E7F /* DigitalClock.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4BB7D11871D47C005C0E7F /* DigitalClock.m */; };
+		DD4BB7D61871E9C6005C0E7F /* StatisticView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4BB7D51871E9C6005C0E7F /* StatisticView.m */; };
+		DDC9EBCC1872BFC300B9FAFE /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC9EBCA1872BFC300B9FAFE /* add@2x.png */; };
+		DDC9EBCD1872BFC300B9FAFE /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC9EBCB1872BFC300B9FAFE /* back@2x.png */; };
+		DDC9EBD118731D2300B9FAFE /* AlarmEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9EBD018731D2300B9FAFE /* AlarmEditViewController.m */; };
+		DDC9EBD418732CB000B9FAFE /* AlarmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9EBD318732CB000B9FAFE /* AlarmCell.m */; };
+		DDC9EBD81873F83600B9FAFE /* AddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9EBD71873F83600B9FAFE /* AddAlarmViewController.m */; };
+		DDC9EBDB18743CD100B9FAFE /* WordlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9EBDA18743CD100B9FAFE /* WordlistViewController.m */; };
+		DDC9EBDE18743FF700B9FAFE /* WordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9EBDD18743FF700B9FAFE /* WordCell.m */; };
+		DDC9EBE11874479D00B9FAFE /* WordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC9EBE01874479D00B9FAFE /* WordDetailViewController.m */; };
+		DDC9EBE31874563800B9FAFE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC9EBE21874563800B9FAFE /* menu@2x.png */; };
+		DDCD5B2A18702A2300123F27 /* AlphaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCD5B2918702A2300123F27 /* AlphaButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD06BB7C187081D400E2AABA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DD085316186B2047001DC8EB /* WordClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD085319186B2047001DC8EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD08531B186B2047001DC8EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +83,65 @@
 		DD085328186B2047001DC8EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD085329186B2047001DC8EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD08532C186B2047001DC8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD08532E186B2047001DC8EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD08532F186B2047001DC8EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD085331186B2047001DC8EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD085337186B2047001DC8EB /* WordClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD085338186B2047001DC8EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DD085340186B2047001DC8EB /* WordClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordClockTests-Info.plist"; sourceTree = "<group>"; };
 		DD085342186B2047001DC8EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD085344186B2047001DC8EB /* WordClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordClockTests.m; sourceTree = "<group>"; };
+		DD08534F186B2088001DC8EB /* word_clock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = word_clock.xcdatamodel; sourceTree = "<group>"; };
+		DD085353186B3A45001DC8EB /* CoreDataEnvir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataEnvir.h; sourceTree = "<group>"; };
+		DD085354186B3A45001DC8EB /* CoreDataEnvir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataEnvir.m; sourceTree = "<group>"; };
+		DD085358186B3B62001DC8EB /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		DD085359186B3B62001DC8EB /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		DD08535B186B3BE4001DC8EB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD08538A186D9009001DC8EB /* GuessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessViewController.h; sourceTree = "<group>"; };
+		DD08538B186D9009001DC8EB /* GuessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessViewController.m; sourceTree = "<group>"; };
+		DD08538F186DB914001DC8EB /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		DD085392186DB914001DC8EB /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
+		DD085393186DB914001DC8EB /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		DD085394186DB914001DC8EB /* prev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev@2x.png"; sourceTree = "<group>"; };
+		DD08539E186DBAB9001DC8EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DD0853A2186DBEE6001DC8EB /* shake_match.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_match.wav; sourceTree = "<group>"; };
+		DD0853A3186DBEE6001DC8EB /* shake_nomatch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_nomatch.wav; sourceTree = "<group>"; };
+		DD0853A4186DBEE6001DC8EB /* shake_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound.wav; sourceTree = "<group>"; };
+		DD0853A8186DE6F0001DC8EB /* SourceCodePro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SourceCodePro.ttf; sourceTree = "<group>"; };
+		DD0853AA186DEBA8001DC8EB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DD0853AB186DEBA8001DC8EB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DD0853AD186DEC83001DC8EB /* ALDClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDClock.h; sourceTree = "<group>"; };
+		DD0853AE186DEC83001DC8EB /* ALDClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDClock.m; sourceTree = "<group>"; };
+		DD2A1A1318771EC0007867C4 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		DD2A1A1518772788007867C4 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		DD2A1A1618772788007867C4 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		DD2A1A1718772788007867C4 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		DD2A1A1B18773397007867C4 /* wordmenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wordmenu@2x.png"; sourceTree = "<group>"; };
+		DD2A1A1E1877378F007867C4 /* word_clock.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = word_clock.sqlite; sourceTree = "<group>"; };
+		DD4BB7CA1871C8FA005C0E7F /* alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@2x.png"; sourceTree = "<group>"; };
+		DD4BB7CB1871C8FA005C0E7F /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		DD4BB7CC1871C8FA005C0E7F /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		DD4BB7D01871D47C005C0E7F /* DigitalClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalClock.h; sourceTree = "<group>"; };
+		DD4BB7D11871D47C005C0E7F /* DigitalClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitalClock.m; sourceTree = "<group>"; };
+		DD4BB7D41871E9C6005C0E7F /* StatisticView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticView.h; sourceTree = "<group>"; };
+		DD4BB7D51871E9C6005C0E7F /* StatisticView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticView.m; sourceTree = "<group>"; };
+		DD5D3B8918747E7D000D2520 /* Default_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_960.png; sourceTree = "<group>"; };
+		DD5D3B8A18747E8D000D2520 /* Default_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_1136.png; sourceTree = "<group>"; };
+		DDC9EBCA1872BFC300B9FAFE /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		DDC9EBCB1872BFC300B9FAFE /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		DDC9EBCF18731D2300B9FAFE /* AlarmEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmEditViewController.h; sourceTree = "<group>"; };
+		DDC9EBD018731D2300B9FAFE /* AlarmEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmEditViewController.m; sourceTree = "<group>"; };
+		DDC9EBD218732CB000B9FAFE /* AlarmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmCell.h; sourceTree = "<group>"; };
+		DDC9EBD318732CB000B9FAFE /* AlarmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmCell.m; sourceTree = "<group>"; };
+		DDC9EBD61873F83600B9FAFE /* AddAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlarmViewController.h; sourceTree = "<group>"; };
+		DDC9EBD71873F83600B9FAFE /* AddAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlarmViewController.m; sourceTree = "<group>"; };
+		DDC9EBD918743CD100B9FAFE /* WordlistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordlistViewController.h; sourceTree = "<group>"; };
+		DDC9EBDA18743CD100B9FAFE /* WordlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordlistViewController.m; sourceTree = "<group>"; };
+		DDC9EBDC18743FF700B9FAFE /* WordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCell.h; sourceTree = "<group>"; };
+		DDC9EBDD18743FF700B9FAFE /* WordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordCell.m; sourceTree = "<group>"; };
+		DDC9EBDF1874479D00B9FAFE /* WordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDetailViewController.h; sourceTree = "<group>"; };
+		DDC9EBE01874479D00B9FAFE /* WordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDetailViewController.m; sourceTree = "<group>"; };
+		DDC9EBE21874563800B9FAFE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		DDCD5B2818702A2300123F27 /* AlphaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaButton.h; sourceTree = "<group>"; };
+		DDCD5B2918702A2300123F27 /* AlphaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +149,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD06BB7D187081D400E2AABA /* AVFoundation.framework in Frameworks */,
+				DD08539F186DBAB9001DC8EB /* AudioToolbox.framework in Frameworks */,
+				DD08535C186B3BE4001DC8EB /* CoreData.framework in Frameworks */,
 				DD08531C186B2047001DC8EB /* CoreGraphics.framework in Frameworks */,
 				DD08531E186B2047001DC8EB /* UIKit.framework in Frameworks */,
 				DD08531A186B2047001DC8EB /* Foundation.framework in Frameworks */,
@@ -82,6 +174,11 @@
 		DD08530D186B2047001DC8EB = {
 			isa = PBXGroup;
 			children = (
+				DD5D3B8A18747E8D000D2520 /* Default_1136.png */,
+				DD5D3B8918747E7D000D2520 /* Default_960.png */,
+				DD2A1A1518772788007867C4 /* icon58.png */,
+				DD2A1A1618772788007867C4 /* icon80.png */,
+				DD2A1A1718772788007867C4 /* icon120.png */,
 				DD08531F186B2047001DC8EB /* WordClock */,
 				DD08533E186B2047001DC8EB /* WordClockTests */,
 				DD085318186B2047001DC8EB /* Frameworks */,
@@ -101,6 +198,9 @@
 		DD085318186B2047001DC8EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD06BB7C187081D400E2AABA /* AVFoundation.framework */,
+				DD08539E186DBAB9001DC8EB /* AudioToolbox.framework */,
+				DD08535B186B3BE4001DC8EB /* CoreData.framework */,
 				DD085319186B2047001DC8EB /* Foundation.framework */,
 				DD08531B186B2047001DC8EB /* CoreGraphics.framework */,
 				DD08531D186B2047001DC8EB /* UIKit.framework */,
@@ -112,13 +212,18 @@
 		DD08531F186B2047001DC8EB /* WordClock */ = {
 			isa = PBXGroup;
 			children = (
+				DD2A1A1D1877378F007867C4 /* database */,
+				DD08538D186DB914001DC8EB /* resources */,
+				DD085388186D8FBD001DC8EB /* controllers */,
+				DD085389186D8FBD001DC8EB /* views */,
+				DD085357186B3B3F001DC8EB /* models */,
+				DD085352186B3A45001DC8EB /* CoreDataEnvir */,
 				DD085328186B2047001DC8EB /* AppDelegate.h */,
 				DD085329186B2047001DC8EB /* AppDelegate.m */,
 				DD08532B186B2047001DC8EB /* Main.storyboard */,
-				DD08532E186B2047001DC8EB /* ViewController.h */,
-				DD08532F186B2047001DC8EB /* ViewController.m */,
 				DD085331186B2047001DC8EB /* Images.xcassets */,
 				DD085320186B2047001DC8EB /* Supporting Files */,
+				DD08534E186B2088001DC8EB /* word_clock.xcdatamodeld */,
 			);
 			path = WordClock;
 			sourceTree = "<group>";
@@ -150,6 +255,93 @@
 				DD085341186B2047001DC8EB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD085352186B3A45001DC8EB /* CoreDataEnvir */ = {
+			isa = PBXGroup;
+			children = (
+				DD085353186B3A45001DC8EB /* CoreDataEnvir.h */,
+				DD085354186B3A45001DC8EB /* CoreDataEnvir.m */,
+			);
+			path = CoreDataEnvir;
+			sourceTree = "<group>";
+		};
+		DD085357186B3B3F001DC8EB /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DD085358186B3B62001DC8EB /* Word.h */,
+				DD085359186B3B62001DC8EB /* Word.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		DD085388186D8FBD001DC8EB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD08538A186D9009001DC8EB /* GuessViewController.h */,
+				DD08538B186D9009001DC8EB /* GuessViewController.m */,
+				DD0853AA186DEBA8001DC8EB /* HomeViewController.h */,
+				DD0853AB186DEBA8001DC8EB /* HomeViewController.m */,
+				DDC9EBCF18731D2300B9FAFE /* AlarmEditViewController.h */,
+				DDC9EBD018731D2300B9FAFE /* AlarmEditViewController.m */,
+				DDC9EBD61873F83600B9FAFE /* AddAlarmViewController.h */,
+				DDC9EBD71873F83600B9FAFE /* AddAlarmViewController.m */,
+				DDC9EBD918743CD100B9FAFE /* WordlistViewController.h */,
+				DDC9EBDA18743CD100B9FAFE /* WordlistViewController.m */,
+				DDC9EBDF1874479D00B9FAFE /* WordDetailViewController.h */,
+				DDC9EBE01874479D00B9FAFE /* WordDetailViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		DD085389186D8FBD001DC8EB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DD0853AD186DEC83001DC8EB /* ALDClock.h */,
+				DD0853AE186DEC83001DC8EB /* ALDClock.m */,
+				DDCD5B2818702A2300123F27 /* AlphaButton.h */,
+				DDCD5B2918702A2300123F27 /* AlphaButton.m */,
+				DD4BB7D01871D47C005C0E7F /* DigitalClock.h */,
+				DD4BB7D11871D47C005C0E7F /* DigitalClock.m */,
+				DD4BB7D41871E9C6005C0E7F /* StatisticView.h */,
+				DD4BB7D51871E9C6005C0E7F /* StatisticView.m */,
+				DDC9EBD218732CB000B9FAFE /* AlarmCell.h */,
+				DDC9EBD318732CB000B9FAFE /* AlarmCell.m */,
+				DDC9EBDC18743FF700B9FAFE /* WordCell.h */,
+				DDC9EBDD18743FF700B9FAFE /* WordCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DD08538D186DB914001DC8EB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A1A1318771EC0007867C4 /* home@2x.png */,
+				DDC9EBE21874563800B9FAFE /* menu@2x.png */,
+				DD2A1A1B18773397007867C4 /* wordmenu@2x.png */,
+				DDC9EBCA1872BFC300B9FAFE /* add@2x.png */,
+				DDC9EBCB1872BFC300B9FAFE /* back@2x.png */,
+				DD4BB7CA1871C8FA005C0E7F /* alarm@2x.png */,
+				DD4BB7CB1871C8FA005C0E7F /* list@2x.png */,
+				DD4BB7CC1871C8FA005C0E7F /* settings@2x.png */,
+				DD0853A8186DE6F0001DC8EB /* SourceCodePro.ttf */,
+				DD0853A2186DBEE6001DC8EB /* shake_match.wav */,
+				DD0853A3186DBEE6001DC8EB /* shake_nomatch.wav */,
+				DD0853A4186DBEE6001DC8EB /* shake_sound.wav */,
+				DD08538F186DB914001DC8EB /* close@2x.png */,
+				DD085392186DB914001DC8EB /* next@2x.png */,
+				DD085393186DB914001DC8EB /* play@2x.png */,
+				DD085394186DB914001DC8EB /* prev@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		DD2A1A1D1877378F007867C4 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A1A1E1877378F007867C4 /* word_clock.sqlite */,
+			);
+			path = database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +420,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC9EBCD1872BFC300B9FAFE /* back@2x.png in Resources */,
+				DD2A1A1A18772788007867C4 /* icon120.png in Resources */,
+				DDC9EBCC1872BFC300B9FAFE /* add@2x.png in Resources */,
+				DD0853A7186DBEE6001DC8EB /* shake_sound.wav in Resources */,
+				DD2A1A1418771EC0007867C4 /* home@2x.png in Resources */,
+				DD08539B186DB914001DC8EB /* play@2x.png in Resources */,
+				DD4BB7CE1871C8FA005C0E7F /* list@2x.png in Resources */,
+				DD4BB7CF1871C8FA005C0E7F /* settings@2x.png in Resources */,
+				DD2A1A1918772788007867C4 /* icon80.png in Resources */,
+				DD2A1A1818772788007867C4 /* icon58.png in Resources */,
+				DD08539C186DB914001DC8EB /* prev@2x.png in Resources */,
 				DD085332186B2047001DC8EB /* Images.xcassets in Resources */,
+				DD0853A9186DE6F0001DC8EB /* SourceCodePro.ttf in Resources */,
 				DD085324186B2047001DC8EB /* InfoPlist.strings in Resources */,
 				DD08532D186B2047001DC8EB /* Main.storyboard in Resources */,
+				DD085397186DB914001DC8EB /* close@2x.png in Resources */,
+				DD0853A6186DBEE6001DC8EB /* shake_nomatch.wav in Resources */,
+				DD08539A186DB914001DC8EB /* next@2x.png in Resources */,
+				DD2A1A1F1877378F007867C4 /* word_clock.sqlite in Resources */,
+				DD2A1A1C18773397007867C4 /* wordmenu@2x.png in Resources */,
+				DDC9EBE31874563800B9FAFE /* menu@2x.png in Resources */,
+				DD4BB7CD1871C8FA005C0E7F /* alarm@2x.png in Resources */,
+				DD0853A5186DBEE6001DC8EB /* shake_match.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +461,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD085330186B2047001DC8EB /* ViewController.m in Sources */,
 				DD08532A186B2047001DC8EB /* AppDelegate.m in Sources */,
+				DDC9EBDE18743FF700B9FAFE /* WordCell.m in Sources */,
+				DD085350186B2088001DC8EB /* word_clock.xcdatamodeld in Sources */,
+				DDC9EBD81873F83600B9FAFE /* AddAlarmViewController.m in Sources */,
+				DDC9EBD118731D2300B9FAFE /* AlarmEditViewController.m in Sources */,
+				DDC9EBE11874479D00B9FAFE /* WordDetailViewController.m in Sources */,
+				DDC9EBDB18743CD100B9FAFE /* WordlistViewController.m in Sources */,
+				DDCD5B2A18702A2300123F27 /* AlphaButton.m in Sources */,
+				DD0853AF186DEC83001DC8EB /* ALDClock.m in Sources */,
+				DD085355186B3A45001DC8EB /* CoreDataEnvir.m in Sources */,
 				DD085326186B2047001DC8EB /* main.m in Sources */,
+				DD08535A186B3B62001DC8EB /* Word.m in Sources */,
+				DD4BB7D21871D47C005C0E7F /* DigitalClock.m in Sources */,
+				DD4BB7D61871E9C6005C0E7F /* StatisticView.m in Sources */,
+				DD0853AC186DEBA8001DC8EB /* HomeViewController.m in Sources */,
+				DD08538C186D9009001DC8EB /* GuessViewController.m in Sources */,
+				DDC9EBD418732CB000B9FAFE /* AlarmCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +686,7 @@
 				DD08534A186B2047001DC8EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD08534B186B2047001DC8EB /* Build configuration list for PBXNativeTarget "WordClockTests" */ = {
 			isa = XCConfigurationList;
@@ -468,8 +695,22 @@
 				DD08534D186B2047001DC8EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD08534E186B2088001DC8EB /* word_clock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD08534F186B2088001DC8EB /* word_clock.xcdatamodel */,
+			);
+			currentVersion = DD08534F186B2088001DC8EB /* word_clock.xcdatamodel */;
+			path = word_clock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD08530E186B2047001DC8EB /* Project object */;
 }
